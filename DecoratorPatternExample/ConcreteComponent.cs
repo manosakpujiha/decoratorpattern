@@ -4,7 +4,11 @@ namespace DecoratorPatternExample
     {
         public string GetText()
         {
-            return "Hello, World!";
+            return "Why did the Decorator Pattern break up with the Singleton Pattern?";
+        }
+        public string GetAnswer()
+        {
+            return "Because the Singleton couldn’t handle all the layers of commitment! 😄";
         }
     }
 }

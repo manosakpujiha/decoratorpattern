@@ -8,6 +8,7 @@ namespace DecoratorPatternExample
         {
             // Create the base component
             IComponent<string> baseComponent = new ConcreteComponent();
+            // ConcreteComponent baseComponents = new ConcreteComponent();
 
             // Create decorators
             IComponent<string> plainDecorator = new PlainDecorator(baseComponent);
@@ -26,6 +27,9 @@ namespace DecoratorPatternExample
 
             Console.WriteLine("\nColor Decorator:");
             Console.WriteLine(colorDecorator.GetText());
+
+            Console.WriteLine("\nResponse:");
+            Console.WriteLine(new ConcreteComponent().GetAnswer());
         }
     }
 }
